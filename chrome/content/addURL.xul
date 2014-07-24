@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window
+    id="findfile-window"
+    title="Find Files"
+    orient="horizontal"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<script src="addURL.js"/>
+
+	<vbox flex="1">
+		<label id="thelink" value="thelink" flex="1"/>
+		<textbox id="tags" multiline="true" flex="1"/>
+		<spacer flex="1"/>
+		<hbox>
+			<spacer flex="1"/>
+			<button id="add-button" label="Add" oncommand="ffaddURL.addURL();"/>
+			<button id="cancel-button" label="Cancel" oncommand="ffaddURL.cancel();"/>
+		</hbox>
+	</vbox>
+<!-- Other elements go here --> 
+</window>
+

@@ -1,0 +1,8 @@
+content     ff-mydata    chrome/content/
+content     ff-mydata    chrome/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://ff-mydata/content/browser.xul
+
+locale	ff-mydata	en-US	locale/en-US/
+
+skin	ff-mydata	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://ff-mydata/skin/skin.css

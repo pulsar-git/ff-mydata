@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://ff-mydata/skin/skin.css" type="text/css"?> 
+<!DOCTYPE ff-mydata SYSTEM "chrome://ff-mydata/locale/translations.dtd">
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		<script src="ff-mydata.js" />
+
+		<menupopup id="menu_ToolsPopup"> 
+			<menuitem label="&runff-mydata-add;" key="ff-mydata-add-key" oncommand="ffmydata.add()"/> 
+			<menuitem label="&runff-mydata-get;" key="ff-mydata-get-key" oncommand="ffmydata.run()"/> 
+		</menupopup>
+		
+		<keyset>
+			<key id="ff-mydata-get-key" modifiers="accel alt shift" key="G" oncommand="ffmydata.run()"/>
+			<key id="ff-mydata-add-key" modifiers="accel alt shift" key="B" oncommand="ffmydata.add()"/>
+		</keyset>
+		
+		<statusbar id="status-bar">
+			<statusbarpanel id="link-target-finder-status-bar-icon" class="statusbarpanel-iconic" src="chrome://ff-mydata/skin/status-bar.png" tooltiptext="&runff-mydata-add;" onclick="ff-mydata.run()" />
+		</statusbar>
+		
+		<toolbarpalette id="BrowserToolbarPalette">
+			<toolbarbutton id="link-target-finder-toolbar-button" label="Link Target Finder" tooltiptext="&runff-mydata-add;" oncommand="ffmydata.run()"/>
+		</toolbarpalette>
+</overlay>
